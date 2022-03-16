@@ -13,6 +13,8 @@ import Loading from '../components/loading/Loading';
 import { daysLeft } from '../helpers/countDays';
 import MessageBox from '../components/message-box/MessageBox';
 
+const API_URL = 'https://ntnu-plantmanager.herokuapp.com';
+
 const LandingPageScreen = () => {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
@@ -32,9 +34,7 @@ const LandingPageScreen = () => {
     // dispatch(listUsers());
     setLoading(true);
     try {
-      const { data } = await axios.get(
-        'https://ntnu-plantmanager.herokuapp.com/plants'
-      );
+      const { data } = await axios.get(`${API_URL}/plants`);
       setPlants(data);
       setLoading(false);
     } catch (error) {
