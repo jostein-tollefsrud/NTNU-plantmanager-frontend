@@ -1,8 +1,7 @@
 import * as actionTypes from '../constants/userConstants';
 import axios from 'axios';
 
-require('dotenv').config();
-const { PLANT_API } = process.env;
+const PLANT_API = 'https://ntnu-plantmanager.herokuapp.com';
 
 const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
