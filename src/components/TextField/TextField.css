@@ -1,0 +1,63 @@
+.input ~ .input {
+    margin-top: 1.5em;
+}
+
+.inputgroup {
+    position: relative;
+}
+
+.error__icon {
+    position: absolute;
+    right: .6em;
+    top: 2px;
+    font-size: 1.2em;
+    color: var(--clr-danger);
+}
+
+.success__icon {
+    position: absolute;
+    right: .6em;
+    top: 2px;
+    font-size: 1.2em;
+    color: var(--clr-success);
+}
+
+.input .input__field {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid var(--clr-input-border);
+    border-radius: 0;
+}
+
+.input, .input__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.input .input__error {
+    color: var(--clr-danger);
+    margin-top: 5px;
+}
+
+.input .input__success {
+    border: 1px solid var(--clr-success);
+}
+
+.input .input__invalid {
+    border: 1px solid var(--clr-danger);
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle-password {
+    background-color: transparent;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+}

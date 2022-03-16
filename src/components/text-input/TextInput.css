@@ -1,0 +1,23 @@
+
+select {
+    font-size: inherit;
+    border: 1px solid var(--clr-input-border);
+    background-color: transparent;
+    padding: 1em;
+    margin: .5em 0 1.5em 0;
+} 
+
+.text-input input {
+    font-size: inherit;
+    display: block;
+    border: 1px solid var(--clr-input-border);
+    border-radius: 0;
+    background-color: transparent;
+    padding: 1em;
+    margin: .5em 0 1.5em 0;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 700;
+}

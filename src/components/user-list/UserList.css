@@ -1,0 +1,51 @@
+.user {
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding: 2em 0;
+}
+
+.user:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.user:first-of-type {
+    padding-top: .5em;
+}
+
+.user > div {
+    padding: .2em 0;
+}
+
+.user div:last-of-type {
+    margin-bottom: 1em;
+}
+
+.user a {
+    margin-right: 1em;
+}
+
+.sorting select {
+    padding: .2em;
+    margin-left: .5em;
+    display: inline-block;
+}
+
+.sorting label {
+    font-weight: 300;
+}
+
+/* @media screen and (min-width: 420px) {
+    .sorting {
+        position: absolute;
+        top: 1.6em;
+        right: 2em;
+    }
+} */
+
+/* @media screen and (min-width: 600px) {
+    .sorting {
+        position: absolute;
+        top: 2.7em;
+        right: 3em;
+    }
+} */

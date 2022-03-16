@@ -1,0 +1,10 @@
+:root {
+    --clr-white: rgb(253, 253, 253);
+    --clr-secondary: rgb(31, 62, 124);
+    --clr-success: #338632;
+    --clr-danger: #D7232C;
+    --clr-link: #17559B;
+    --clr-input-border: #2d2d2d;
+    --clr-button-primary: #3282CE;
+    --clr-warning: orange;
+}

@@ -1,0 +1,15 @@
+.dashboard-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dashboard-content-container > * {
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 600px) {
+    .dashboard-content-container {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,131 @@
+@import '../../variables.css';
+
+header * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+.link-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 0 1em .5em 0;
+    top: 70px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    display: block;
+    margin-right: 1em;
+}
+
+.link-text-name {
+    position: absolute;
+    padding: 0 1em .5em 0;
+    right: 9em;
+    top: 70px;
+}
+
+.link-text-name::after,
+.link-text::after {
+    display: none;
+}
+
+.link-text:hover,
+.link-text-name:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo::after {
+    display: none;
+}
+
+.login-btn {
+    padding: .3em 1em;
+    border: 2px solid var(--clr-button-primary);
+    background-color: var(--clr-button-primary);
+    border-radius: 2px;
+    color: var(--clr-white);
+}
+
+.login-btn::after {
+    display: none;
+}
+
+.login-btn:hover {
+    color: black;
+    border: 2px solid var(--clr-button-primary);
+    background-color: transparent;
+}
+
+@media screen and (min-width: 470px) {
+    .link-text {
+        position: initial;
+        padding: 0;
+        top: 0;
+        left: 0;
+        border-bottom: none;
+    }
+
+    .link-text-name {
+        position: initial;
+        right: 1em;
+        top: 0;
+    }
+
+    header ul {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    header * {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        height: 75px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}

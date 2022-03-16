@@ -1,0 +1,43 @@
+@import '../../variables.css';
+
+.input + .button {
+    margin-top: 1em;
+}
+
+.button {
+    /* display: flex; */
+    align-items: center;
+    gap: 1em;
+    padding: .8em 1.6em;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button + .button {
+    margin-left: 1em;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    opacity: .8;
+}
+
+.primary {
+    background-color: var(--clr-button-primary);
+    color: var(--clr-white);
+}
+
+.danger {
+    background-color: var(--clr-danger);
+    color: var(--clr-white);
+}
+
+.small {
+    padding: .2em .4em;
+    font-weight: 400;
+}

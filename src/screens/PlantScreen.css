@@ -1,0 +1,22 @@
+.plant-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5em 0 5em;
+}
+
+.plant-container h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.plant-container p {
+    font-size: 22px;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+img {
+    object-fit: none;
+}
