@@ -69,7 +69,7 @@ export const createPlant =
       const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
       const { data } = await axios.post(
-        `${PLANT_API}/register`,
+        `${PLANT_API}/plant/register`,
         {
           name,
           location,
