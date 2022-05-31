@@ -83,7 +83,6 @@ The users all have the same password (Password123)
 ## Contact
 
 Created by [Jostein Tollefsrud](https://github.com/jostein-tollefsrud)
-, [Ida Therese Hongset Trøan](https://github.com/Idahpews)
-and [Ragni Støen](https://github.com/RagniStoen)
+and [Ida Therese Hongset Trøan](https://github.com/Idahpews)
 
 Feel free to contact us!
