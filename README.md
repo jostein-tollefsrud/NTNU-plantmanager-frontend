@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# NTNU-plantmanager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is the final repository for a plant manager project.
 
-## Available Scripts
+[Backend repository of this project](https://github.com/jostein-tollefsrud/NTNU-plantmanager-backend)
 
-In the project directory, you can run:
+## Table of contents
 
-### `yarn start`
+-   [General info](#general-info)
+-   [Technologies](#technologies)
+-   [Setup](#setup)
+-   [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+&nbsp;
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## General info
 
-### `yarn test`
+The department of design needs an administrative tool to monitor the state of the
+plants and its health. This project takes care of both backend API and the frontend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+&nbsp;
 
-### `yarn build`
+## Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   bcrypt - version 5.0.1
+-   cors - version 2.8.5
+-   dotenv - version 8.2.0
+-   express - version 4.17.1
+-   mongoose - version 5.12.3
+-   passport - version 0.4.1
+-   passport-jwt - version 4.0.0
+-   swagger-jsdoc - version 6.0.1
+-   swagger-ui-express - version 4.1.6
+-   jsdoc - version 3.6.6
+-   nodemon - version 2.0.7
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+&nbsp;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup
 
-### `yarn eject`
+This express application requires a `.env` file. In the root of the backend folder, create a `.env` file and put the following into it:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+NODE_ENV=development
+DB_STRING=mongodb://localhost:27017/plant-manager
+DB_STRING_PROD=<your production database string>
+PRIVATE_KEY=thisIsTheSupersecretKey
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+KEY_ID=AKIA5VX4Z22MJTUVZBRR
+SECRET=VHuudSut4qhUa6q1EnSYEyXL+GKZTo1fNRiyxNx4
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You need to run both Mongo DB Compass and MongoDB Community Edition.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Download MongoDB Community Edition from here](https://docs.mongodb.com/manual/administration/install-community/).
 
-## Learn More
+```
+# Install all the dependencies needed to run this application in both the frontend folder and the backend folder
+$ npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the seeder from the backend directory to insert users and plants
+$ node seederScript.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#
+# Start 2 terminals and do the following:
+#
 
-### Code Splitting
+# Start the Express server from the backend folder (http://localhost:5000)
+$ nodemon app.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Start the React app from the front end folder
+$ npm run start
+```
 
-### Analyzing the Bundle Size
+The users all have the same password (Password123)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-   Ola Nordmann - ola@email.com (manager)
+-   Kari Nordmann - kari@email.com (gardener)
+-   Nils Nordmann - nils@email.com (user)
 
-### Making a Progressive Web App
+&nbsp;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
+Created by [Jostein Tollefsrud](https://github.com/jostein-tollefsrud)
+, [Ida Therese Hongset Trøan](https://github.com/Idahpews)
+and [Ragni Støen](https://github.com/RagniStoen)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contact us!
